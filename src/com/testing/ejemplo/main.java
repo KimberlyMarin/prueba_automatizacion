@@ -31,7 +31,7 @@ public class main {
 		resultado.getText();
 		Assert.assertThat(resultado.getText(), CoreMatchers.containsString("Cerca"));
 
-       // Thread.sleep(10000);
+       Thread.sleep(10000);
 
        driver.close();
 
