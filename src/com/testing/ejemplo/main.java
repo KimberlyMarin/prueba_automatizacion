@@ -1,4 +1,4 @@
-package com.sqamexico.ejemplo;
+package com.testing.ejemplo;
 
 //import java.util.logging.Logger;
 import org.hamcrest.CoreMatchers;
@@ -27,13 +27,13 @@ public class main {
         driver.get("https://www.google.com/?hl=es_419");
 
         WebElement nombre = driver.findElement(By.xpath("//div[@class='a4bIc']/input"));
-		nombre.sendKeys("Polombia");
+		nombre.sendKeys("Colombia");
         nombre.sendKeys(Keys.ENTER);
 		WebElement resultado = driver.findElement(By.xpath("//div[@id='extabar']"));
 		resultado.getText();
 		Assert.assertThat(resultado.getText(), CoreMatchers.containsString("Cerca"));
 
-       // Thread.sleep(10000);
+       Thread.sleep(8000);
 
        driver.close();
 
