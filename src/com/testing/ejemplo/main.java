@@ -1,4 +1,4 @@
-package com.sqamexico.ejemplo;
+package com.testing.ejemplo;
 
 //import java.util.logging.Logger;
 import org.hamcrest.CoreMatchers;
