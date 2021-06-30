@@ -25,7 +25,7 @@ public class main {
         driver.get("https://www.google.com/?hl=es_419");
 
         WebElement nombre = driver.findElement(By.xpath("//div[@class='a4bIc']/input"));
-		nombre.sendKeys("Polombia");
+		nombre.sendKeys("Colombia");
         nombre.sendKeys(Keys.ENTER);
 		WebElement resultado = driver.findElement(By.xpath("//div[@id='extabar']"));
 		resultado.getText();
