@@ -16,8 +16,10 @@ public class main {
 
 	public static void main(String[] args) throws InterruptedException {
 
-
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+		/*ejecucion en mac */
+		//System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+		//WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 
 		WebDriver driver=new ChromeDriver();
 
